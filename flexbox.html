@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" src="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo_flexbox.css" />
     <title>Pratica do flexbox</title>
 
     <style>
-        .item-lista{
-            list-style-type: square;
-        }
-        .desc-lista{
-            list-style-type: circle;
-        }
+      .item-lista {
+        list-style-type: square;
+      }
+      .desc-lista {
+        list-style-type: circle;
+      }
     </style>
   </head>
   <body>
@@ -24,16 +24,25 @@
       necessidade de uma configuração adicional de geometria.
     </p>
     <h2>Tipos de Layouts</h2>
-    <ul>
+    <div class="listas">
+      <ul>
         <li class="item-lista"><b>Block:</b></li>
-        <ul><li class="desc-lista">Utilizado para seções de uma página web</li></ul>
+        <ul>
+          <li class="desc-lista">Utilizado para seções de uma página web</li>
+        </ul>
         <li class="item-lista"><b>Inline:</b></li>
-        <ul><li class="desc-lista">Utilizado para textos</li></ul>
+        <ul>
+          <li class="desc-lista">Utilizado para textos</li>
+        </ul>
         <li class="item-lista"><b>Table:</b></li>
-        <ul><li class="desc-lista">Para dados de uma tabela bi-dimensional</li></ul>
+        <ul>
+          <li class="desc-lista">Para dados de uma tabela bi-dimensional</li>
+        </ul>
         <li class="item-lista"><b>Positioned:</b></li>
-        <ul><li class="desc-lista">Para posições explicitas de um elemento</li></ul>
-    </ul>
-
+        <ul>
+          <li class="desc-lista">Para posições explicitas de um elemento</li>
+        </ul>
+      </ul>
+    </div>
   </body>
 </html>
