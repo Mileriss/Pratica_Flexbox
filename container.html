@@ -1,87 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="estilo_container.css" />
-    <title>Container</title>
-  </head>
-  <body>
-    <h1>CONTAINER</h1>
-    <p>
-      Flex container torna os elementos flexiveis dentro do layout e
-      disponibiliza algumas propriedades para sua manipulação.
-    </p>
-    <h2>Propriedades do Flex-Container:</h2>
-    <div class="flex-container flex-direction">
-      <h2>flex-direction</h2>
-      <p>Define em qual direção o container deve posicionar os itens</p>
-      <div class="flex-container coluna">
-        <b>Column:</b>
-        <p>Vai organizar os itens em colunas (cima para baixo)</p>
-        <div class="blocos">Bloco 1</div>
-        <div class="blocos">Bloco 2</div>
-        <div class="blocos">Bloco 3</div>
-      </div>
-      <div class="flex-container coluna-reversa">
-        <b>Column-reverse:</b>
-        <p>Vai organizar os itens em colunas (baixo para cima)</p><br>
-        <div class="blocos">Bloco 1</div>
-        <div class="blocos">Bloco 2</div>
-        <div class="blocos">Bloco 3</div>
-      </div>
-      <div class="flex-container linha">
-        <b>Row:</b>
-        <p>Vai organizar os itens na horizontal (esquerda para direita)</p>
-        <div class="blocos">Bloco 1</div>
-        <div class="blocos">Bloco 2</div>
-        <div class="blocos">Bloco 3</div>
-      </div>
-      <div class="flex-container linha-reversa">
-        <b>Row-reverse:</b>
-        <p>Vai organizar os itens na horizontal (direita para esquerda)</p>
-        <div class="blocos">Bloco 1</div>
-        <div class="blocos">Bloco 2</div>
-        <div class="blocos">Bloco 3</div>
-      </div>
-    </div>
-    <hr />
-    <div class="flex-container flex-wrap">
-      <h2>flex-wrap</h2>
-      <p>descrição</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilo_container.css" />
+  <title>Container</title>
+</head>
+
+<body>
+  <h1>CONTAINER</h1>
+  <p>
+    Flex container torna os elementos flexiveis dentro do layout e
+    disponibiliza algumas propriedades para sua manipulação.
+  </p>
+  <h2>Propriedades do Flex-Container</h2>
+  <hr>
+  <!--Inicio Flex-Direction-->
+  <h2>flex-direction</h2>
+  <p>Define em qual direção o container deve posicionar os itens</p>
+  <div class="flex-container flex-direction">
+    <b>Column:</b>
+    <p>Vai organizar os itens em colunas (cima para baixo)</p>
+    <div class="flex-container coluna">
       <div class="blocos">Bloco 1</div>
       <div class="blocos">Bloco 2</div>
       <div class="blocos">Bloco 3</div>
     </div>
-    <div class="flex-container flex-flow">
-      <h2>flex-flow:</h2>
-      <p>Descrição</p>
+    <b>Column-reverse:</b>
+    <p>Vai organizar os itens em colunas (baixo para cima)</p>
+    <div class="flex-container coluna-reversa">
       <div class="blocos">Bloco 1</div>
       <div class="blocos">Bloco 2</div>
       <div class="blocos">Bloco 3</div>
     </div>
-    <div class="flex-container justify-content">
-      <h2>justify-content:</h2>
-      <p>Descrição</p>
+    <b>Row:</b>
+    <p>Vai organizar os itens na horizontal (esquerda para direita)</p>
+    <div class="flex-container linha">
       <div class="blocos">Bloco 1</div>
       <div class="blocos">Bloco 2</div>
       <div class="blocos">Bloco 3</div>
     </div>
-    <div class="flex-container align-itens">
-      <h2>align-itens:</h2>
-      <p>Descrição</p>
+    <b>Row-reverse:</b>
+    <p>Vai organizar os itens na horizontal (direita para esquerda)</p>
+    <div class="flex-container linha-reversa">
       <div class="blocos">Bloco 1</div>
       <div class="blocos">Bloco 2</div>
       <div class="blocos">Bloco 3</div>
     </div>
-    <div class="flex-container align-content">
-      <h2>align-content:</h2>
-      <p>Descrição</p>
+  </div>
+  <!--Fim Flex-Direction-->
+  <hr />
+  <!--Inicio Flex-Wrap-->
+  <h2>flex-wrap</h2>
+  <p>Propriedade que especifica qual dos itens devem ser posicionados/encapsulados</p>
+  <div class="flex-container flex-wrap">
+    <b>Wrap:</b>
+    <p>Vai indicar que os itens serão encapsulados caso seja necessário</p>
+    <div class="flex-container wrap">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+      <div class="blocos">Bloco 4</div>
+      <div class="blocos">Bloco 5</div>
+      <div class="blocos">Bloco 6</div>
+      <div class="blocos">Bloco 7</div>
+      <div class="blocos">Bloco 8</div>
+      <div class="blocos">Bloco 9</div>
+      <div class="blocos">Bloco 10</div>
+    </div>
+    <b>No-Wrap:</b>
+    <p>Vai indicar que os itens <n>não</n> serão encapsulados caso seja necessário</p>
+    <div class="flex-container no-wrap">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+      <div class="blocos">Bloco 4</div>
+      <div class="blocos">Bloco 5</div>
+      <div class="blocos">Bloco 6</div>
+      <div class="blocos">Bloco 7</div>
+      <div class="blocos">Bloco 8</div>
+      <div class="blocos">Bloco 9</div>
+      <div class="blocos">Bloco 10</div>
+    </div>
+    <b>Wrap-Reverse:</b>
+    <p>Vai indicar que os itens srão encapsulados na ordem contrária, caso sejá necessário</p>
+    <div class="flex-container wrap-reverse">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+      <div class="blocos">Bloco 4</div>
+      <div class="blocos">Bloco 5</div>
+      <div class="blocos">Bloco 6</div>
+      <div class="blocos">Bloco 7</div>
+      <div class="blocos">Bloco 8</div>
+      <div class="blocos">Bloco 9</div>
+      <div class="blocos">Bloco 10</div>
+    </div>
+  </div>
+  <!--Fim Flex-Wrap-->
+  <hr>
+  <!--Inicio Flex-Flow-->
+  <h2>Flex-Flow</h2>
+  <p>É uma forma de declarar o <b>flex-direction</b> e o <b>flex-wrap</b> juntos</p>
+  <div class="flex-container flex-flow">
+    <b>Flex-Flow:</b>
+    <p>Declarando o <b>row</b> e o <b>wrap</b></p>
+    <div class="flex-container flow">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+      <div class="blocos">Bloco 4</div>
+      <div class="blocos">Bloco 5</div>
+    </div>
+  </div>
+  <!--Fim Flex-Flow-->
+  <hr>
+  <!--Inicio Justify-Content-->
+  <h2>justify-content:</h2>
+  <p>É o comando utilizado para definir onde os itens ficarão ajustados</p>
+  <div class="flex-container justify-content">
+    <b>Center:</b>
+    <p>Vai indicar que os itens fiquem posicionados ao centro</p>
+    <div class="flex-container center">
       <div class="blocos">Bloco 1</div>
       <div class="blocos">Bloco 2</div>
       <div class="blocos">Bloco 3</div>
     </div>
-  </body>
+    <b>Flex-Start:</b>
+    <p>Vai indicar que os itens fiquem posicionados no inicio do bloco principal/container</p>
+    <div class="flex-container flex-start">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+    </div>
+    <b>Flex-End:</b>
+    <p>Vai indicar que os itens fiquem posicionados no final do bloco principal/container</p>
+    <div class="flex-container flex-end">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+    </div>
+    <b>Space-Around:</b>
+    <p>Vai indicar que os itens fiquem posicionados antes, entre e depois das linhas do bloco principal/container</p>
+    <div class="flex-container space-around">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+    </div>
+    <b>Space-Between:</b>
+    <p>Vai indicar que os itens fiquem posicionados entre as linhas do bloco principal/container</p>
+    <div class="flex-container space-between">
+      <div class="blocos">Bloco 1</div>
+      <div class="blocos">Bloco 2</div>
+      <div class="blocos">Bloco 3</div>
+    </div>
+  </div>
+  <!--Fim Justify-Content-->
+  <div class="flex-container align-itens">
+    <h2>align-itens:</h2>
+    <p>Descrição</p>
+    <div class="blocos">Bloco 1</div>
+    <div class="blocos">Bloco 2</div>
+    <div class="blocos">Bloco 3</div>
+  </div>
+  <div class="flex-container align-content">
+    <h2>align-content:</h2>
+    <p>Descrição</p>
+    <div class="blocos">Bloco 1</div>
+    <div class="blocos">Bloco 2</div>
+    <div class="blocos">Bloco 3</div>
+  </div>
+</body>
+
 </html>
