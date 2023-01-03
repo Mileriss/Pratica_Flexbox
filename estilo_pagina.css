@@ -1,3 +1,10 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
 /*FLEXBOX*/
 .item-lista {
     list-style-type: square;
@@ -7,9 +14,11 @@
     list-style-type: circle;
 }
 
-.flex-container>.blocos {
-    background-color: white;
-    border: 2px solid black;
+/*CONTAINER*/
+.flex-container >.blocos {
+    color: white;
+    background-color: lightslategrey;
+    border: 3px solid black;
     border-radius: 10%;
     width: 100px;
     margin: 10px;
@@ -21,23 +30,24 @@
 /*FLEX-DIRECTION*/
 .flex-direction {
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
 .flex-container>.coluna {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
     align-items: center;
     justify-content: center;
+    
 }
 
 .flex-container>.coluna-reversa {
     display: flex;
     flex-direction: column-reverse;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
     align-items: center;
     justify-content: center;
@@ -46,7 +56,7 @@
 .flex-container>.linha {
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
     align-items: center;
     justify-content: center;
@@ -55,7 +65,7 @@
 .flex-container>.linha-reversa {
     display: flex;
     flex-direction: row-reverse;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
     align-items: center;
     justify-content: center;
@@ -64,7 +74,7 @@
 /*FLEX-WRAP*/
 .flex-wrap {
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -72,7 +82,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -80,7 +90,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -88,28 +98,28 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
 /*FLEX FLOW*/
 .flex-flow {
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
 .flex-container>.flow {
     display: flex;
     flex-flow: row wrap;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
 /*JUSTIFY-CONTENT*/
 .justify-content {
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -117,7 +127,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -125,7 +135,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -134,7 +144,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -142,7 +152,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 2%;
 }
 
@@ -150,6 +160,81 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+/*Align-Itens*/
+.align-itens {
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.flex-container > .center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-container > .stretch{
+    display: flex;
+    align-items: stretch;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.flex-container > .baseline{
+    display: flex;
+    align-items: baseline;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+/*ITENS*/
+.itens{
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.order{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.flex-grow{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.flex-shrink{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.flex-basis{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.flex-property{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.align-self{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
     margin: 2%;
 }
